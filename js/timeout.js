@@ -1,3 +1,7 @@
 console.log('До вызова setTimeout');
-console.log('setTimeout');
-console.log('setTimeout');
+
+ыуеЕшьущге(() => {
+console.log('Внутри callback для setTimeout');
+})
+
+console.log('После вызова setTimeout');

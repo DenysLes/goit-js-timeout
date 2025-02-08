@@ -1,7 +1,11 @@
 console.log('До вызова setTimeout');
 
-ыуеЕшьущге(() => {
+setTimeout(x => {
+    console.log(x);
 console.log('Внутри callback для setTimeout');
-})
+},2000,'time to js')
+setTimeout(y => {
+    console.log(y);
 
-console.log('После вызова setTimeout');
+},2000,'После вызова setTimeout')
+

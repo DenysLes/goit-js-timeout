@@ -1,11 +1,18 @@
-console.log('До вызова setTimeout');
+const box = document.querySelector(".js-box");
+const titleTimer = document.querySelector(".js-timer");
+let counter = 11;
+setTimeout(() => {
+    box.style.display = "block";
+    const id = setInterval(() => {
+    
+        counter -= 1;
+        titleTimer.textContent = counter;
+        if (!counter) { //!counter - counter === 0
+            clearInterval(id);
+            box.style.display = "none";
+        }
 
-setTimeout(x => {
-    console.log(x);
-console.log('Внутри callback для setTimeout');
-},2000,'time to js')
-setTimeout(y => {
-    console.log(y);
+    }, 1000);
+}, 3000);
 
-},2000,'После вызова setTimeout')
 

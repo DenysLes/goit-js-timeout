@@ -7,30 +7,38 @@
     border-radius: 3px;
     box-shadow: 1em 0.5em .7em rgb(109, 43, 112);
 } */
+
+ body {
+   background: url(https://static4.depositphotos.com/1003549/289/i/600/depositphotos_2893265-stock-photo-electricity.jpg) no-repeat center;
+   -webkit-background-size: cover;
+   background-size: cover;
+   min-height: 100vh;
+ }
+
  .calendar {
-     background: linear-gradient(blue, pink);
-     display: flex;
-     flex-wrap: wrap;
-     text-align: center;
-     justify-content: space-around;
-     align-items: center;
+   background: linear-gradient(blue, pink);
+   opacity: 0.7;
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: space-around;
+   align-items: center;
  }
 
  .date-style {
-     font-size: 35px;
-     margin-bottom: 40px;
+   font-size: 35px;
+   margin-bottom: 40px;
+   text-shadow: 2px 1px 2px white;
  }
 
  .digital-clock {
-     font-size: 35px;
-     background: linear-gradient(pink, blue);
-     padding-bottom: 50px;
-     padding-top: 10px;
-     /* display: flex;
-     flex-wrap: wrap; */
-     text-align: center;
-     /* align-items: center; */
-     /* flex-direction: column */
+   font-size: 35px;
+   background: linear-gradient(pink, blue);
+   opacity: 0.7;
+   padding-bottom: 50px;
+   padding-top: 10px;
+   text-shadow: 2px 3px 2px white;
+   text-align: center;
  }
 
  /* .digital-clock-text {
@@ -40,48 +48,54 @@
         padding-top: 30px;
      text-align: center;
  } */
-  .clock{
-    width: 550px;
-    height: 550px;
-    background-image: url(http://i.ibb.co/dBGxSK1/hiclipart-com-3.png);
-    background-color: rgba(255,255,255,0);
-    background-size: cover;
-    border-radius: 50%;
-    position: relative;
-    left: 400px;
-  }
-  .clock-arrow {
-    position: absolute;
-    background-color: black;
-    transform-origin: bottom;
-    transform: translateX(-50%);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-  }
-  .clock-center {
-    position: absolute;
-    background-color: black;
-    top: 268px;
-    left: 268px;
-    width: 20px;
-    height:20px;
-    border-radius: 50%;
-  }
-  .clock-seconds__arrow {
-    bottom: 50%;
-    left: 50%;
-    width: 5px;
-    height: 40%;
-  }
-  .clock-minutes__arrow {
-    bottom: 50%;
-    left: 50%;
-    width: 7px;
-    height: 33%;
-  }
-  .clock-hours__arrow {
-    bottom: 50%;
-        left: 50%;
-        width: 12px;
-        height: 24%;
-  }
+ .clock {
+   width: 550px;
+   height: 550px;
+   background-image: url(http://i.ibb.co/dBGxSK1/hiclipart-com-3.png);
+   /* background-color: rgba(255,255,255,0); */
+   background-color: rgba(27, 7, 245, 0.2);
+   background-size: cover;
+   border-radius: 50%;
+   position: relative;
+   left: 400px;
+ }
+
+ .clock-arrow {
+   position: absolute;
+   background-color: black;
+   transform-origin: bottom;
+   transform: translateX(-50%);
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+ }
+
+ .clock-center {
+   position: absolute;
+   background-color: black;
+   top: 268px;
+   left: 268px;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+ }
+
+ .clock-seconds__arrow {
+   bottom: 50%;
+   left: 50%;
+   width: 5px;
+   height: 40%;
+ }
+
+ .clock-minutes__arrow {
+   bottom: 50%;
+   left: 50%;
+   width: 7px;
+   height: 33%;
+ }
+
+ .clock-hours__arrow {
+   bottom: 50%;
+   left: 50%;
+   width: 12px;
+   height: 24%;
+ }
